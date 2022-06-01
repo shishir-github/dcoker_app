@@ -1,0 +1,5 @@
+steps:
+- name: "gcr.io/cloud-builders/docker"
+  args: ["build", "-t", 'gcr.io/moonlit-watch-349713/docker_app', '.']
+- name: "gcr.io/cloud-builders/docker"
+  args: ["push", "-t", 'gcr.io/moonlit-watch-349713/dcoker_app', '.']
